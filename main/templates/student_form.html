@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block student_form %}
+<form method="POST" class="post-form">
+    {% for field in form %}
+    <div class="form-group">
+        {{ field }}
+    </div>
+    {% endfor %}
+    
+</form>
+
+{% endblock %}

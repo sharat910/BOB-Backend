@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block students %}
+
+        <div class="row">
+          <h1>List of Students
+          <a class="btn btn-success" href="{% url 'new-student' %}">ADD STUDENT</a>
+          </h1>
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Student Name</th>
+                <th scope="col">Student Batch</th>
+                <th scope="col">Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr v-for="article in articles">
+                <th scope="row">${article.id}</th>
+                <td>${article.name}</td>
+                <td>${article.batch_details}</td>
+                <td>
+                  <a class="btn btn-info" v-bind:href="'/student/edit/'+ article.id">Edit</a>
+                  
+                  <button class="btn btn-danger" v-on:click="deleteArticle(article.id)">Delete</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="loading" v-if="loading===true">Loading&#8230;
+
+{% endblock %}
