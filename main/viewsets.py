@@ -1,4 +1,7 @@
-from rest_framework import viewsets
+from rest_framework import status, viewsets
+from rest_framework.response import Response
+from rest_framework.decorators import action
+
 from .models import *
 from .serializers import *
 
@@ -42,13 +45,65 @@ class SalaryRateViewSet(viewsets.ModelViewSet):
     queryset = SalaryRate.objects.all()
     serializer_class = SalaryRateSerializer
 
+    @action(detail=False)
+    def get_rate(self,request):
+        rate = SalaryRate.objects.get(pk=1)
+        serializer = SalaryRateSerializer(rate)
+        return Response(serializer.data)
+
+    @action(methods=['post'],detail=False)
+    def set_rate(self,request):
+        rate = SalaryRate.objects.get(pk=1)
+        serializer = SalaryRateSerializer(rate,data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response({'status': 'Rate set'})
+        else:
+            return Response(serializer.errors,
+                            status=status.HTTP_400_BAD_REQUEST)
+
+
 class FeeRateViewSet(viewsets.ModelViewSet):
     queryset = FeeRate.objects.all()
     serializer_class = FeeRateSerializer
 
+    @action(detail=False)
+    def get_rate(self,request):
+        rate = FeeRate.objects.get(pk=1)
+        serializer = FeeRateSerializer(rate)
+        return Response(serializer.data)
+
+    @action(methods=['post'],detail=False)
+    def set_rate(self,request):
+        rate = FeeRate.objects.get(pk=1)
+        serializer = FeeRateSerializer(rate,data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response({'status': 'Rate set'})
+        else:
+            return Response(serializer.errors,
+                            status=status.HTTP_400_BAD_REQUEST)
+
 class RoyaltyRateViewSet(viewsets.ModelViewSet):
     queryset = RoyaltyRate.objects.all()
     serializer_class = RoyaltyRateSerializer
+
+    @action(detail=False)
+    def get_rate(self,request):
+        rate = RoyaltyRate.objects.get(pk=1)
+        serializer = RoyaltyRateSerializer(rate)
+        return Response(serializer.data)
+
+    @action(methods=['post'],detail=False)
+    def set_rate(self,request):
+        rate = RoyaltyRate.objects.get(pk=1)
+        serializer = RoyaltyRateSerializer(rate,data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response({'status': 'Rate set'})
+        else:
+            return Response(serializer.errors,
+                            status=status.HTTP_400_BAD_REQUEST)
 
 class ExpenditureViewSet(viewsets.ModelViewSet):
     queryset = Expenditure.objects.all()

@@ -1,6 +1,6 @@
 from rest_framework import routers
 from .viewsets import *
-
+from .stock.viewsets import ItemViewSet,TransactionViewSet
 router = routers.DefaultRouter()
 
 router.register(r'teacher', TeacherViewSet)
@@ -16,3 +16,6 @@ router.register(r'salaryrate', SalaryRateViewSet)
 router.register(r'feerate', FeeRateViewSet)
 router.register(r'royaltyrate', RoyaltyRateViewSet)
 router.register(r'expenditure', ExpenditureViewSet)
+
+router.register(r'item', ItemViewSet)
+router.register(r'transcation', TransactionViewSet)
