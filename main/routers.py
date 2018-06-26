@@ -18,4 +18,4 @@ router.register(r'royaltyrate', RoyaltyRateViewSet)
 router.register(r'expenditure', ExpenditureViewSet)
 
 router.register(r'item', ItemViewSet)
-router.register(r'transcation', TransactionViewSet)
+router.register(r'transaction', TransactionViewSet)
