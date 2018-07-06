@@ -5,8 +5,8 @@ from django.views.generic import TemplateView
 
 urlpatterns = [
     path('', views.index, name='index'),
+    path(r'^', include('django.contrib.auth.urls')),
     path(r'api/', include(router.urls)),
-    #path(r'students/', TemplateView.as_view(template_name='students.html'),name='student-list'),
-    #path(r'student/new', views.add_new_student, name='new-student'),
-    #path(r'student/edit/<int:pk>/', views.StudentEdit.as_view(), name='student-edit'),
+    path(r'rest-auth/', include('rest_auth.urls')),
+    path(r'rest-auth/registration/', include('rest_auth.registration.urls'))
 ]
