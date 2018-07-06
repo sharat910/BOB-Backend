@@ -177,12 +177,12 @@ def load_all():
     load_levels()
     load_rates()
     load_teacher()
-    load_batch()
-    #load_parent()
-    load_student()
-    load_exam_result()
-    load_feerecord()
-    load_salaryrecord()
+    # load_batch()
+    # #load_parent()
+    # load_student()
+    # load_exam_result()
+    # load_feerecord()
+    # load_salaryrecord()
 
 if __name__ == '__main__':
     load_all()

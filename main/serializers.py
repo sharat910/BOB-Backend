@@ -11,6 +11,12 @@ class CustomSerializer(serializers.ModelSerializer):
         else:
             return expanded_fields
 
+class CentreSerializer(CustomSerializer):
+    class Meta:
+        model = Centre
+        fields = '__all__'
+        extra_fields= ['summary']
+
 class SalaryRecordSerializer(CustomSerializer):
     month_names = serializers.StringRelatedField(source='months',many=True,read_only=True)
     batch_details = serializers.StringRelatedField(source='batch',read_only=True)
@@ -71,17 +77,19 @@ class TeacherSerializer(CustomSerializer):
     class Meta:
         model = Teacher
         fields = '__all__'
-        extra_fields = ['batches','trained_max_level_detail','salaryrecords']
+        extra_fields = ['summary','batches','trained_max_level_detail','salaryrecords']
 
 class LevelSerializer(CustomSerializer):
     class Meta:
         model = Level
         fields = '__all__'
+        extra_fields= ['summary']
 
 class MonthSerializer(CustomSerializer):
     class Meta:
         model = Month
         fields = '__all__'
+        extra_fields= ['summary']
 
 class SalaryRateSerializer(CustomSerializer):
     class Meta:

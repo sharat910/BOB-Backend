@@ -9,9 +9,9 @@ class TeacherViewSet(viewsets.ModelViewSet):
     queryset = Teacher.objects.all()
     serializer_class = TeacherSerializer
 
-# class ParentViewSet(viewsets.ModelViewSet):
-#     queryset = Parent.objects.all()
-#     serializer_class = ParentSerializer
+class CentreViewSet(viewsets.ModelViewSet):
+    queryset = Centre.objects.all()
+    serializer_class = CentreSerializer
 
 class StudentViewSet(viewsets.ModelViewSet):
     queryset = Student.objects.all()

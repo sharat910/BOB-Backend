@@ -4,7 +4,7 @@ from .stock.viewsets import ItemViewSet,TransactionViewSet
 router = routers.DefaultRouter()
 
 router.register(r'teacher', TeacherViewSet)
-# router.register(r'parent', ParentViewSet)
+router.register(r'centre', CentreViewSet)
 router.register(r'student', StudentViewSet)
 router.register(r'batch', BatchViewSet)
 router.register(r'level', LevelViewSet)

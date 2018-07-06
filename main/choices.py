@@ -76,6 +76,11 @@ MONTHS = (
     ('December', 'December'),
 )
 
+GENDER_CHOICES = (
+    ('Male', 'Male'),
+    ('Female', 'Female'),
+)
+
 SALARY_TYPES = (
     ('Level', 'Level'),
     ('Month', 'Month'),

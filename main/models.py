@@ -13,12 +13,19 @@ class Level(models.Model):
     def __str__(self):
         return self.level
 
+    @property
+    def summary(self):
+        return str(self)
 
 class Month(models.Model):
     month = models.CharField(max_length=10, choices=MONTHS,default='None')
 
     def __str__(self):
         return self.month
+
+    @property
+    def summary(self):
+        return str(self)
 
 class Expenditure(models.Model):
     date = models.DateField()
@@ -29,12 +36,20 @@ class Expenditure(models.Model):
     def __str__(self):
         return "%d | %s" % (self.amount,self.description)
 
+    @property
+    def summary(self):
+        return str(self)
+
 class SalaryRate(models.Model):
     salary_rate = models.IntegerField()
     date = models.DateField(auto_now_add=True)
 
     def __str__(self):
         return str(self.salary_rate)
+
+    @property
+    def summary(self):
+        return str(self)
 
 class FeeRate(models.Model):
     month_fee = models.IntegerField()
@@ -46,6 +61,10 @@ class FeeRate(models.Model):
     def __str__(self):
         return str(self.level_fee)
 
+    @property
+    def summary(self):
+        return str(self)
+
 class RoyaltyRate(models.Model):
     month_royalty = models.IntegerField()
     level_royalty = models.IntegerField()
@@ -56,6 +75,19 @@ class RoyaltyRate(models.Model):
     def __str__(self):
         return str(self.level_fee)
 
+    @property
+    def summary(self):
+        return str(self)
+
+class Centre(models.Model):
+    name = models.CharField(max_length=50)
+    code = models.CharField(max_length=10)
+
+    def __str__(self):
+        return "%s" % (self.name)
+
+    def summary(self):
+        return str(self)
 
 class Teacher(models.Model):
     date = models.DateField(auto_now_add=True)
@@ -69,6 +101,10 @@ class Teacher(models.Model):
         return self.name
 
     @property
+    def summary(self):
+        return str(self)
+
+    @property
     def trained_max_level_detail(self):
         return str(self.trained_max_level)
 
@@ -79,11 +115,13 @@ class Batch(models.Model):
         Level, models.SET_NULL, related_name='batches', blank=True, null=True)
     teacher = models.ForeignKey(
         Teacher, models.SET_NULL,related_name='batches', blank=True, null=True)
+    centre = models.ForeignKey(
+        Centre, models.SET_NULL,related_name='batches', blank=True, null=True)
     level_start_date = models.DateField()
 
 
     def __str__(self):
-        return "%s | %s | %s" % (self.day, self.timing, self.level.level)
+        return "%s | %s | %s | %s" % (self.day, self.timing, self.level.level, self.centre.name)
 
 
     @property
@@ -109,6 +147,8 @@ class Batch(models.Model):
 
 class Student(models.Model):
     name = models.CharField(max_length=200)
+    code = models.CharField(max_length=5)
+    gender = models.CharField(max_length=6,choices=GENDER_CHOICES)
     date_of_birth = models.DateField()
     date_of_joining = models.DateField()
     batch = models.ForeignKey(Batch, models.SET_NULL, related_name='students',blank=True, null=True)
@@ -135,6 +175,10 @@ class Student(models.Model):
     def __unicode__(self):
         return self.name
 
+    @property
+    def summary(self):
+        return str(self)
+        
 class ExamResult(models.Model):
     student = models.ForeignKey(
         Student, models.SET_NULL, related_name='examresults', blank=True, null=True)
@@ -161,6 +205,8 @@ class FeeRecord(models.Model):
         Level, models.SET_NULL, related_name='feerecords', blank=True, null=True)
     months = models.ManyToManyField(Month, related_name='feerecords')
     date_of_payment = models.DateField()
+    balance = models.IntegerField()
+    due = models.IntegerField()
 
     def __str__(self):
         if self.fee_type == 'Level':
@@ -183,6 +229,8 @@ class SalaryRecord(models.Model):
     batch = models.ForeignKey(
         Batch, models.SET_NULL, related_name='salaryrecords', blank=True, null=True)
     date_of_payment = models.DateField()
+    balance = models.IntegerField()
+    due = models.IntegerField()
 
     def __str__(self):
         return "%s | %s" % (self.teacher.name,self.month.month)
