@@ -1,7 +1,7 @@
-from rest_framework import status, viewsets
+from rest_framework import status, viewsets, filters
 from rest_framework.response import Response
 from rest_framework.decorators import action
-
+from .paginations import LargePagination
 from .models import *
 from .serializers import *
 
@@ -108,3 +108,7 @@ class RoyaltyRateViewSet(viewsets.ModelViewSet):
 class ExpenditureViewSet(viewsets.ModelViewSet):
     queryset = Expenditure.objects.all()
     serializer_class = ExpenditureSerializer
+    filter_backends = (filters.OrderingFilter,)
+    ordering_fields = ('voucher_id', 'description', 'date','amount')
+    ordering = ('-date',)
+    pagination_class = LargePagination
