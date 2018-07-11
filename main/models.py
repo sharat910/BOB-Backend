@@ -42,7 +42,7 @@ class Expenditure(models.Model):
 
 class SalaryRate(models.Model):
     salary_rate = models.IntegerField()
-    date = models.DateField(auto_now_add=True)
+    date_added = models.DateField(auto_now_add=True)
 
     def __str__(self):
         return str(self.salary_rate)
@@ -56,7 +56,7 @@ class FeeRate(models.Model):
     level_fee = models.IntegerField()
     exam_fee = models.IntegerField()
     registration_fee = models.IntegerField()
-    date = models.DateField(auto_now_add=True)
+    date_added = models.DateField(auto_now_add=True)
 
     def __str__(self):
         return str(self.level_fee)
@@ -70,7 +70,7 @@ class RoyaltyRate(models.Model):
     level_royalty = models.IntegerField()
     exam_royalty = models.IntegerField()
     registration_royalty = models.IntegerField()
-    date = models.DateField(auto_now_add=True)
+    date_added = models.DateField(auto_now_add=True)
 
     def __str__(self):
         return str(self.level_fee)
@@ -80,7 +80,8 @@ class RoyaltyRate(models.Model):
         return str(self)
 
 class Centre(models.Model):
-    name = models.CharField(max_length=50)
+    name = models.CharField(max_length=100)
+    area = models.CharField(max_length=100)
     code = models.CharField(max_length=10)
 
     def __str__(self):
@@ -90,7 +91,7 @@ class Centre(models.Model):
         return str(self)
 
 class Teacher(models.Model):
-    date = models.DateField(auto_now_add=True)
+    date_added = models.DateField(auto_now_add=True)
     name = models.CharField(max_length=200)
     phone = models.CharField(max_length=15)
     email = models.EmailField(null=True)
@@ -154,11 +155,8 @@ class Student(models.Model):
     batch = models.ForeignKey(Batch, models.SET_NULL, related_name='students',blank=True, null=True)
     # parents = models.ManyToManyField(Parent, related_name='students')
     #exam_results = models.ManyToManyField(ExamResult)
-    performance_rating = models.CharField(max_length=6,choices=PERFORMANCE_CHOICES,default='Medium')
-    dropped = models.BooleanField(default=False)
-    date_dropped = models.DateField(blank=True,null=True)
-    t_shirt_size = models.CharField(max_length=4, choices=T_SHIRT_SIZES)
-    photo = models.ImageField(upload_to=get_image_path, blank=True, null=True)
+
+    #photo = models.ImageField(upload_to=get_image_path, blank=True, null=True)
 
     #Parent_details
     father_name = models.CharField(max_length=200)
@@ -169,6 +167,13 @@ class Student(models.Model):
     alt_phone = models.CharField(max_length=13,null=True,blank=True)
     email = models.EmailField(null=True,blank=True)
 
+    performance_rating = models.CharField(max_length=6,choices=PERFORMANCE_CHOICES,default='Medium')
+    dropped = models.BooleanField(default=False)
+    date_dropped = models.DateField(blank=True,null=True)
+    graduated = models.BooleanField(default=False)
+    date_graduated = models.DateField(blank=True,null=True)
+    t_shirt_size = models.CharField(max_length=4,blank=True,null=True, choices=T_SHIRT_SIZES)
+
     def __str__(self):
         return self.name
 
@@ -178,7 +183,7 @@ class Student(models.Model):
     @property
     def summary(self):
         return str(self)
-        
+
 class ExamResult(models.Model):
     student = models.ForeignKey(
         Student, models.SET_NULL, related_name='examresults', blank=True, null=True)
