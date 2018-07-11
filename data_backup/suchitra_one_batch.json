@@ -1,0 +1,795 @@
+[
+{
+  "model": "main.level",
+  "pk": 1,
+  "fields": {
+    "level": "Level-1"
+  }
+},
+{
+  "model": "main.level",
+  "pk": 2,
+  "fields": {
+    "level": "Level-2"
+  }
+},
+{
+  "model": "main.level",
+  "pk": 3,
+  "fields": {
+    "level": "Level-3"
+  }
+},
+{
+  "model": "main.level",
+  "pk": 4,
+  "fields": {
+    "level": "Level-4"
+  }
+},
+{
+  "model": "main.level",
+  "pk": 5,
+  "fields": {
+    "level": "Level-5"
+  }
+},
+{
+  "model": "main.level",
+  "pk": 6,
+  "fields": {
+    "level": "Level-6"
+  }
+},
+{
+  "model": "main.level",
+  "pk": 7,
+  "fields": {
+    "level": "Level-7"
+  }
+},
+{
+  "model": "main.level",
+  "pk": 8,
+  "fields": {
+    "level": "Level-8"
+  }
+},
+{
+  "model": "main.level",
+  "pk": 9,
+  "fields": {
+    "level": "Level-9"
+  }
+},
+{
+  "model": "main.level",
+  "pk": 10,
+  "fields": {
+    "level": "Level-10"
+  }
+},
+{
+  "model": "main.level",
+  "pk": 11,
+  "fields": {
+    "level": "Module-1"
+  }
+},
+{
+  "model": "main.level",
+  "pk": 12,
+  "fields": {
+    "level": "Module-2"
+  }
+},
+{
+  "model": "main.level",
+  "pk": 13,
+  "fields": {
+    "level": "Module-3"
+  }
+},
+{
+  "model": "main.level",
+  "pk": 14,
+  "fields": {
+    "level": "Module-4"
+  }
+},
+{
+  "model": "main.month",
+  "pk": 1,
+  "fields": {
+    "month": "January"
+  }
+},
+{
+  "model": "main.month",
+  "pk": 2,
+  "fields": {
+    "month": "February"
+  }
+},
+{
+  "model": "main.month",
+  "pk": 3,
+  "fields": {
+    "month": "March"
+  }
+},
+{
+  "model": "main.month",
+  "pk": 4,
+  "fields": {
+    "month": "April"
+  }
+},
+{
+  "model": "main.month",
+  "pk": 5,
+  "fields": {
+    "month": "May"
+  }
+},
+{
+  "model": "main.month",
+  "pk": 6,
+  "fields": {
+    "month": "June"
+  }
+},
+{
+  "model": "main.month",
+  "pk": 7,
+  "fields": {
+    "month": "July"
+  }
+},
+{
+  "model": "main.month",
+  "pk": 8,
+  "fields": {
+    "month": "August"
+  }
+},
+{
+  "model": "main.month",
+  "pk": 9,
+  "fields": {
+    "month": "September"
+  }
+},
+{
+  "model": "main.month",
+  "pk": 10,
+  "fields": {
+    "month": "October"
+  }
+},
+{
+  "model": "main.month",
+  "pk": 11,
+  "fields": {
+    "month": "November"
+  }
+},
+{
+  "model": "main.month",
+  "pk": 12,
+  "fields": {
+    "month": "December"
+  }
+},
+{
+  "model": "main.salaryrate",
+  "pk": 1,
+  "fields": {
+    "salary_rate": 125,
+    "date_added": "2018-07-08"
+  }
+},
+{
+  "model": "main.feerate",
+  "pk": 1,
+  "fields": {
+    "month_fee": 900,
+    "level_fee": 2700,
+    "exam_fee": 200,
+    "registration_fee": 950,
+    "date_added": "2018-07-08"
+  }
+},
+{
+  "model": "main.royaltyrate",
+  "pk": 1,
+  "fields": {
+    "month_royalty": 270,
+    "level_royalty": 810,
+    "exam_royalty": 200,
+    "registration_royalty": 860,
+    "date_added": "2018-07-08"
+  }
+},
+{
+  "model": "main.centre",
+  "pk": 1,
+  "fields": {
+    "name": "Brainobrain Bowenpally",
+    "area": "Bowenpally",
+    "code": "HY01"
+  }
+},
+{
+  "model": "main.centre",
+  "pk": 2,
+  "fields": {
+    "name": "Brainobrain Suchitra",
+    "area": "Suchitra",
+    "code": "HY38"
+  }
+},
+{
+  "model": "main.teacher",
+  "pk": 1,
+  "fields": {
+    "date_added": "2018-07-08",
+    "name": "M Renuka",
+    "phone": "9440751422",
+    "email": "bob.renuka@gmail.com",
+    "trained_max_level": 10
+  }
+},
+{
+  "model": "main.teacher",
+  "pk": 2,
+  "fields": {
+    "date_added": "2018-07-08",
+    "name": "Rajini",
+    "phone": "9441382959",
+    "email": "rajini@gmail.com",
+    "trained_max_level": 2
+  }
+},
+{
+  "model": "main.batch",
+  "pk": 1,
+  "fields": {
+    "timing": "9AM-11AM",
+    "day": "Saturday",
+    "level": 1,
+    "teacher": 1,
+    "centre": 1,
+    "level_start_date": "2018-07-07"
+  }
+},
+{
+  "model": "main.batch",
+  "pk": 2,
+  "fields": {
+    "timing": "11AM-1PM",
+    "day": "Sunday",
+    "level": 1,
+    "teacher": 2,
+    "centre": 2,
+    "level_start_date": "2018-06-17"
+  }
+},
+{
+  "model": "main.student",
+  "pk": 1,
+  "fields": {
+    "name": "Nikhil Chandra",
+    "code": "01",
+    "gender": "Male",
+    "date_of_birth": "2000-11-28",
+    "date_of_joining": "2018-07-07",
+    "batch": 1,
+    "father_name": "Chandra Shekhar",
+    "mother_name": "Renuka",
+    "phone": "9494410800",
+    "alt_phone": "9440751422",
+    "email": "nkhl2811@gmail.com",
+    "performance_rating": "Medium",
+    "dropped": false,
+    "date_dropped": null,
+    "t_shirt_size": "XXL"
+  }
+},
+{
+  "model": "main.student",
+  "pk": 2,
+  "fields": {
+    "name": "G Sitara Reddy",
+    "code": "S134",
+    "gender": "Female",
+    "date_of_birth": "2008-05-13",
+    "date_of_joining": "2018-06-23",
+    "batch": 2,
+    "father_name": "G Rajendar Reddy",
+    "mother_name": "G Satvika Reddy",
+    "phone": "9618121000",
+    "alt_phone": "9492101000",
+    "email": "swathikareddyguddam@gmail.com",
+    "performance_rating": "Medium",
+    "dropped": false,
+    "date_dropped": null,
+    "t_shirt_size": "XL"
+  }
+},
+{
+  "model": "main.student",
+  "pk": 3,
+  "fields": {
+    "name": "K S P Sai Jasmitha",
+    "code": "S125",
+    "gender": "Female",
+    "date_of_birth": "2010-01-28",
+    "date_of_joining": "2018-06-17",
+    "batch": 2,
+    "father_name": "K Murali Krishna",
+    "mother_name": "K Sailaja",
+    "phone": "8187050428",
+    "alt_phone": "9849588807",
+    "email": "murali_karella1980@yahoo.co.in",
+    "performance_rating": "Medium",
+    "dropped": false,
+    "date_dropped": null,
+    "t_shirt_size": "L"
+  }
+},
+{
+  "model": "main.student",
+  "pk": 4,
+  "fields": {
+    "name": "Shiddharth Nair",
+    "code": "S126",
+    "gender": "Male",
+    "date_of_birth": "2009-04-23",
+    "date_of_joining": "2018-06-17",
+    "batch": 2,
+    "father_name": "Shyam Kumar K V",
+    "mother_name": "Raji Shyam",
+    "phone": "8008429829",
+    "alt_phone": "9949094030",
+    "email": "orion.doors@gmail.com",
+    "performance_rating": "Medium",
+    "dropped": false,
+    "date_dropped": null,
+    "t_shirt_size": "L"
+  }
+},
+{
+  "model": "main.student",
+  "pk": 5,
+  "fields": {
+    "name": "D Dipesh Jain",
+    "code": "S127",
+    "gender": "Male",
+    "date_of_birth": "2007-07-06",
+    "date_of_joining": "2018-06-17",
+    "batch": 2,
+    "father_name": "D Srinivas Jain",
+    "mother_name": "D Swapna",
+    "phone": "9908388672",
+    "alt_phone": "7702301905",
+    "email": "dspsrinivas@rediffmail.com",
+    "performance_rating": "Medium",
+    "dropped": false,
+    "date_dropped": null,
+    "t_shirt_size": "L"
+  }
+},
+{
+  "model": "main.student",
+  "pk": 6,
+  "fields": {
+    "name": "D Pritesh Jain",
+    "code": "S128",
+    "gender": "Male",
+    "date_of_birth": "2011-02-20",
+    "date_of_joining": "2018-06-17",
+    "batch": 2,
+    "father_name": "D Srinivas Jain",
+    "mother_name": "D Swapna",
+    "phone": "9908388672",
+    "alt_phone": "7702301905",
+    "email": "dspsrinivas@rediffmail.com",
+    "performance_rating": "Medium",
+    "dropped": false,
+    "date_dropped": null,
+    "t_shirt_size": "L"
+  }
+},
+{
+  "model": "main.student",
+  "pk": 7,
+  "fields": {
+    "name": "Somiselti Roshani Sri",
+    "code": "S138",
+    "gender": "Female",
+    "date_of_birth": "2011-09-02",
+    "date_of_joining": "2018-06-17",
+    "batch": 2,
+    "father_name": "S V Rao",
+    "mother_name": "S Bhagya Lakshmi",
+    "phone": "9764222354",
+    "alt_phone": "8308803345",
+    "email": "venky_somiselti@yahoo.com",
+    "performance_rating": "Medium",
+    "dropped": false,
+    "date_dropped": null,
+    "t_shirt_size": "L"
+  }
+},
+{
+  "model": "main.student",
+  "pk": 8,
+  "fields": {
+    "name": "Nimish Goyal",
+    "code": "S123",
+    "gender": "Male",
+    "date_of_birth": "2011-04-21",
+    "date_of_joining": "2018-06-17",
+    "batch": 2,
+    "father_name": "Ankit Goyal",
+    "mother_name": "Rina Agarwal",
+    "phone": "9951946000",
+    "alt_phone": "9246200582",
+    "email": "aghyd08@gmail.com",
+    "performance_rating": "Medium",
+    "dropped": false,
+    "date_dropped": null,
+    "t_shirt_size": "L"
+  }
+},
+{
+  "model": "main.student",
+  "pk": 9,
+  "fields": {
+    "name": "Nityam Goyal",
+    "code": "S124",
+    "gender": "Male",
+    "date_of_birth": "2007-04-10",
+    "date_of_joining": "2018-06-17",
+    "batch": 2,
+    "father_name": "Ankit Goyal",
+    "mother_name": "Reena Agarwal",
+    "phone": "9951946000",
+    "alt_phone": "9246200582",
+    "email": "aghyd08@gmail.com",
+    "performance_rating": "Medium",
+    "dropped": false,
+    "date_dropped": null,
+    "t_shirt_size": "L"
+  }
+},
+{
+  "model": "main.student",
+  "pk": 10,
+  "fields": {
+    "name": "Sashiv Dhatrik",
+    "code": "S136",
+    "gender": "Male",
+    "date_of_birth": "2010-11-25",
+    "date_of_joining": "2018-06-17",
+    "batch": 2,
+    "father_name": "Harish Dhatrik",
+    "mother_name": "Sowmya Dhatrik",
+    "phone": "7093535555",
+    "alt_phone": "9959902266",
+    "email": "harishdhatrik@gmail.com",
+    "performance_rating": "Medium",
+    "dropped": false,
+    "date_dropped": null,
+    "t_shirt_size": "L"
+  }
+},
+{
+  "model": "main.student",
+  "pk": 11,
+  "fields": {
+    "name": "G Shanti Tara Reddy",
+    "code": "S135",
+    "gender": "Female",
+    "date_of_birth": "2009-09-29",
+    "date_of_joining": "2018-06-23",
+    "batch": 2,
+    "father_name": "Rajendar Reddy",
+    "mother_name": "Satvika Reddy",
+    "phone": "9618121000",
+    "alt_phone": "9492101000",
+    "email": "swathikareddyguddam@gmail.com",
+    "performance_rating": "Medium",
+    "dropped": false,
+    "date_dropped": null,
+    "t_shirt_size": "L"
+  }
+},
+{
+  "model": "main.feerecord",
+  "pk": 1,
+  "fields": {
+    "student": 8,
+    "fee_type": "Level",
+    "fee_amount": 2700,
+    "fee_receipt_no": 6724,
+    "level": 1,
+    "date_of_payment": "2018-06-17",
+    "balance": 0,
+    "due": 0,
+    "months": [
+      6,
+      7,
+      8
+    ]
+  }
+},
+{
+  "model": "main.feerecord",
+  "pk": 2,
+  "fields": {
+    "student": 9,
+    "fee_type": "Level",
+    "fee_amount": 2700,
+    "fee_receipt_no": 6725,
+    "level": 1,
+    "date_of_payment": "2018-06-17",
+    "balance": 0,
+    "due": 0,
+    "months": [
+      6,
+      7,
+      8
+    ]
+  }
+},
+{
+  "model": "main.feerecord",
+  "pk": 3,
+  "fields": {
+    "student": 9,
+    "fee_type": "Exam",
+    "fee_amount": 200,
+    "fee_receipt_no": 6725,
+    "level": 1,
+    "date_of_payment": "2018-06-17",
+    "balance": 0,
+    "due": 0,
+    "months": [
+      8
+    ]
+  }
+},
+{
+  "model": "main.feerecord",
+  "pk": 4,
+  "fields": {
+    "student": 8,
+    "fee_type": "Exam",
+    "fee_amount": 200,
+    "fee_receipt_no": 6724,
+    "level": 1,
+    "date_of_payment": "2018-06-17",
+    "balance": 0,
+    "due": 0,
+    "months": [
+      8
+    ]
+  }
+},
+{
+  "model": "main.feerecord",
+  "pk": 5,
+  "fields": {
+    "student": 3,
+    "fee_type": "Level",
+    "fee_amount": 2700,
+    "fee_receipt_no": 6727,
+    "level": 1,
+    "date_of_payment": "2018-06-17",
+    "balance": 0,
+    "due": 0,
+    "months": [
+      6,
+      7,
+      8
+    ]
+  }
+},
+{
+  "model": "main.feerecord",
+  "pk": 6,
+  "fields": {
+    "student": 3,
+    "fee_type": "Exam",
+    "fee_amount": 200,
+    "fee_receipt_no": 6727,
+    "level": 1,
+    "date_of_payment": "2018-06-17",
+    "balance": 0,
+    "due": 0,
+    "months": [
+      8
+    ]
+  }
+},
+{
+  "model": "main.feerecord",
+  "pk": 7,
+  "fields": {
+    "student": 4,
+    "fee_type": "Level",
+    "fee_amount": 2700,
+    "fee_receipt_no": 6728,
+    "level": 1,
+    "date_of_payment": "2018-06-17",
+    "balance": 0,
+    "due": 0,
+    "months": [
+      6,
+      7,
+      8
+    ]
+  }
+},
+{
+  "model": "main.feerecord",
+  "pk": 8,
+  "fields": {
+    "student": 4,
+    "fee_type": "Exam",
+    "fee_amount": 200,
+    "fee_receipt_no": 6728,
+    "level": 1,
+    "date_of_payment": "2018-06-17",
+    "balance": 0,
+    "due": 0,
+    "months": [
+      8
+    ]
+  }
+},
+{
+  "model": "main.feerecord",
+  "pk": 9,
+  "fields": {
+    "student": 5,
+    "fee_type": "Month",
+    "fee_amount": 900,
+    "fee_receipt_no": 6730,
+    "level": 1,
+    "date_of_payment": "2018-06-17",
+    "balance": 0,
+    "due": 0,
+    "months": [
+      6
+    ]
+  }
+},
+{
+  "model": "main.feerecord",
+  "pk": 10,
+  "fields": {
+    "student": 6,
+    "fee_type": "Month",
+    "fee_amount": 900,
+    "fee_receipt_no": 6730,
+    "level": 1,
+    "date_of_payment": "2018-06-17",
+    "balance": 0,
+    "due": 0,
+    "months": [
+      6
+    ]
+  }
+},
+{
+  "model": "main.feerecord",
+  "pk": 11,
+  "fields": {
+    "student": 2,
+    "fee_type": "Level",
+    "fee_amount": 2700,
+    "fee_receipt_no": 6737,
+    "level": 1,
+    "date_of_payment": "2018-06-17",
+    "balance": 0,
+    "due": 0,
+    "months": [
+      6,
+      7,
+      8
+    ]
+  }
+},
+{
+  "model": "main.feerecord",
+  "pk": 12,
+  "fields": {
+    "student": 2,
+    "fee_type": "Exam",
+    "fee_amount": 200,
+    "fee_receipt_no": 6737,
+    "level": 1,
+    "date_of_payment": "2018-06-17",
+    "balance": 0,
+    "due": 0,
+    "months": [
+      8
+    ]
+  }
+},
+{
+  "model": "main.feerecord",
+  "pk": 13,
+  "fields": {
+    "student": 11,
+    "fee_type": "Level",
+    "fee_amount": 2700,
+    "fee_receipt_no": 6738,
+    "level": 1,
+    "date_of_payment": "2018-06-17",
+    "balance": 0,
+    "due": 0,
+    "months": [
+      6,
+      7,
+      8
+    ]
+  }
+},
+{
+  "model": "main.feerecord",
+  "pk": 14,
+  "fields": {
+    "student": 11,
+    "fee_type": "Exam",
+    "fee_amount": 200,
+    "fee_receipt_no": 6738,
+    "level": 1,
+    "date_of_payment": "2018-06-17",
+    "balance": 0,
+    "due": 0,
+    "months": [
+      8
+    ]
+  }
+},
+{
+  "model": "main.feerecord",
+  "pk": 15,
+  "fields": {
+    "student": 10,
+    "fee_type": "Level",
+    "fee_amount": 2700,
+    "fee_receipt_no": 6751,
+    "level": 1,
+    "date_of_payment": "2018-06-17",
+    "balance": 0,
+    "due": 0,
+    "months": [
+      6,
+      7,
+      8
+    ]
+  }
+},
+{
+  "model": "main.feerecord",
+  "pk": 16,
+  "fields": {
+    "student": 10,
+    "fee_type": "Exam",
+    "fee_amount": 200,
+    "fee_receipt_no": 6751,
+    "level": 1,
+    "date_of_payment": "2018-06-17",
+    "balance": 0,
+    "due": 0,
+    "months": [
+      8
+    ]
+  }
+}
+]

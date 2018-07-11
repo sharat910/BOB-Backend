@@ -1,0 +1,276 @@
+[
+{
+  "model": "main.level",
+  "pk": 1,
+  "fields": {
+    "level": "Level-1"
+  }
+},
+{
+  "model": "main.level",
+  "pk": 2,
+  "fields": {
+    "level": "Level-2"
+  }
+},
+{
+  "model": "main.level",
+  "pk": 3,
+  "fields": {
+    "level": "Level-3"
+  }
+},
+{
+  "model": "main.level",
+  "pk": 4,
+  "fields": {
+    "level": "Level-4"
+  }
+},
+{
+  "model": "main.level",
+  "pk": 5,
+  "fields": {
+    "level": "Level-5"
+  }
+},
+{
+  "model": "main.level",
+  "pk": 6,
+  "fields": {
+    "level": "Level-6"
+  }
+},
+{
+  "model": "main.level",
+  "pk": 7,
+  "fields": {
+    "level": "Level-7"
+  }
+},
+{
+  "model": "main.level",
+  "pk": 8,
+  "fields": {
+    "level": "Level-8"
+  }
+},
+{
+  "model": "main.level",
+  "pk": 9,
+  "fields": {
+    "level": "Level-9"
+  }
+},
+{
+  "model": "main.level",
+  "pk": 10,
+  "fields": {
+    "level": "Level-10"
+  }
+},
+{
+  "model": "main.level",
+  "pk": 11,
+  "fields": {
+    "level": "Module-1"
+  }
+},
+{
+  "model": "main.level",
+  "pk": 12,
+  "fields": {
+    "level": "Module-2"
+  }
+},
+{
+  "model": "main.level",
+  "pk": 13,
+  "fields": {
+    "level": "Module-3"
+  }
+},
+{
+  "model": "main.level",
+  "pk": 14,
+  "fields": {
+    "level": "Module-4"
+  }
+},
+{
+  "model": "main.month",
+  "pk": 1,
+  "fields": {
+    "month": "January"
+  }
+},
+{
+  "model": "main.month",
+  "pk": 2,
+  "fields": {
+    "month": "February"
+  }
+},
+{
+  "model": "main.month",
+  "pk": 3,
+  "fields": {
+    "month": "March"
+  }
+},
+{
+  "model": "main.month",
+  "pk": 4,
+  "fields": {
+    "month": "April"
+  }
+},
+{
+  "model": "main.month",
+  "pk": 5,
+  "fields": {
+    "month": "May"
+  }
+},
+{
+  "model": "main.month",
+  "pk": 6,
+  "fields": {
+    "month": "June"
+  }
+},
+{
+  "model": "main.month",
+  "pk": 7,
+  "fields": {
+    "month": "July"
+  }
+},
+{
+  "model": "main.month",
+  "pk": 8,
+  "fields": {
+    "month": "August"
+  }
+},
+{
+  "model": "main.month",
+  "pk": 9,
+  "fields": {
+    "month": "September"
+  }
+},
+{
+  "model": "main.month",
+  "pk": 10,
+  "fields": {
+    "month": "October"
+  }
+},
+{
+  "model": "main.month",
+  "pk": 11,
+  "fields": {
+    "month": "November"
+  }
+},
+{
+  "model": "main.month",
+  "pk": 12,
+  "fields": {
+    "month": "December"
+  }
+},
+{
+  "model": "main.salaryrate",
+  "pk": 1,
+  "fields": {
+    "salary_rate": 125,
+    "date_added": "2018-07-08"
+  }
+},
+{
+  "model": "main.feerate",
+  "pk": 1,
+  "fields": {
+    "month_fee": 900,
+    "level_fee": 2700,
+    "exam_fee": 200,
+    "registration_fee": 950,
+    "date_added": "2018-07-08"
+  }
+},
+{
+  "model": "main.royaltyrate",
+  "pk": 1,
+  "fields": {
+    "month_royalty": 270,
+    "level_royalty": 810,
+    "exam_royalty": 200,
+    "registration_royalty": 860,
+    "date_added": "2018-07-08"
+  }
+},
+{
+  "model": "main.centre",
+  "pk": 1,
+  "fields": {
+    "name": "Brainobrain Bowenpally",
+    "area": "Bowenpally",
+    "code": "HY01"
+  }
+},
+{
+  "model": "main.centre",
+  "pk": 2,
+  "fields": {
+    "name": "Brainobrain Suchitra",
+    "area": "Suchitra",
+    "code": "HY38"
+  }
+},
+{
+  "model": "main.teacher",
+  "pk": 1,
+  "fields": {
+    "date_added": "2018-07-08",
+    "name": "M Renuka",
+    "phone": "9440751422",
+    "email": "bob.renuka@gmail.com",
+    "trained_max_level": 10
+  }
+},
+{
+  "model": "main.batch",
+  "pk": 1,
+  "fields": {
+    "timing": "9AM-11AM",
+    "day": "Saturday",
+    "level": 1,
+    "teacher": 1,
+    "centre": 1,
+    "level_start_date": "2018-07-07"
+  }
+},
+{
+  "model": "main.student",
+  "pk": 1,
+  "fields": {
+    "name": "Nikhil Chandra",
+    "code": "01",
+    "gender": "Male",
+    "date_of_birth": "2000-11-28",
+    "date_of_joining": "2018-07-07",
+    "batch": 1,
+    "father_name": "Chandra Shekhar",
+    "mother_name": "Renuka",
+    "phone": "9494410800",
+    "alt_phone": "9440751422",
+    "email": "nkhl2811@gmail.com",
+    "performance_rating": "Medium",
+    "dropped": false,
+    "date_dropped": null,
+    "t_shirt_size": "XXL"
+  }
+}
+]
