@@ -4,6 +4,8 @@ from rest_framework.decorators import action
 from .paginations import LargePagination
 from .models import *
 from .serializers import *
+#from .bobfunctions.monthly_statements import generate_monthly_statement
+import json
 
 class TeacherViewSet(viewsets.ModelViewSet):
     queryset = Teacher.objects.all()
@@ -20,6 +22,13 @@ class StudentViewSet(viewsets.ModelViewSet):
 class BatchViewSet(viewsets.ModelViewSet):
     queryset = Batch.objects.all()
     serializer_class = BatchSerializer
+
+    @action(detail=True)
+    def generate_monthly_statement(self,request,pk):
+        batch = Batch.objects.get(pk=pk)
+        serializer = BatchSerializer(batch)
+        file_url = generate_monthly_statement(serializer.data)
+        return Response({'url': file_url})
 
 class LevelViewSet(viewsets.ModelViewSet):
     queryset = Level.objects.all()
