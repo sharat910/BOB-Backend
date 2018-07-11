@@ -1,0 +1,20 @@
+[
+  {
+    "fields": {
+      "name": "Brainobrain Bowenpally",
+      "area": "Bowenpally",
+      "code": "HY01"
+    },
+    "model": "main.centre",
+    "pk": 1
+  },
+  {
+    "fields": {
+      "name": "Brainobrain Suchitra",
+      "area": "Suchitra",
+      "code": "HY38"
+    },
+    "model": "main.centre",
+    "pk": 2
+  }
+]

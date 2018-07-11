@@ -1,0 +1,84 @@
+[{
+  "fields": {
+    "month": "January"
+  },
+  "model": "main.month",
+  "pk": 1
+},
+{
+  "fields": {
+    "month": "February"
+  },
+  "model": "main.month",
+  "pk": 2
+},
+{
+  "fields": {
+    "month": "March"
+  },
+  "model": "main.month",
+  "pk": 3
+},
+{
+  "fields": {
+    "month": "April"
+  },
+  "model": "main.month",
+  "pk": 4
+},
+{
+  "fields": {
+    "month": "May"
+  },
+  "model": "main.month",
+  "pk": 5
+},
+{
+  "fields": {
+    "month": "June"
+  },
+  "model": "main.month",
+  "pk": 6
+},
+{
+  "fields": {
+    "month": "July"
+  },
+  "model": "main.month",
+  "pk": 7
+},
+{
+  "fields": {
+    "month": "August"
+  },
+  "model": "main.month",
+  "pk": 8
+},
+{
+  "fields": {
+    "month": "September"
+  },
+  "model": "main.month",
+  "pk": 9
+},
+{
+  "fields": {
+    "month": "October"
+  },
+  "model": "main.month",
+  "pk": 10
+},
+{
+  "fields": {
+    "month": "November"
+  },
+  "model": "main.month",
+  "pk": 11
+},
+{
+  "fields": {
+    "month": "December"
+  },
+  "model": "main.month",
+  "pk": 12
+}]

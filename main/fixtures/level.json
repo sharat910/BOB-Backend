@@ -1,0 +1,116 @@
+[{
+  "fields": {
+    "level": "Level-1"
+  },
+  "model": "main.level",
+  "pk": 1
+},
+{
+  "fields": {
+    "level": "Level-2"
+  },
+  "model": "main.level",
+  "pk": 2
+},
+
+
+{
+  "fields": {
+    "level": "Level-3"
+  },
+  "model": "main.level",
+  "pk": 3
+},
+
+
+{
+  "fields": {
+    "level": "Level-4"
+  },
+  "model": "main.level",
+  "pk": 4
+},
+
+
+{
+  "fields": {
+    "level": "Level-5"
+  },
+  "model": "main.level",
+  "pk": 5
+},
+
+
+{
+  "fields": {
+    "level": "Level-6"
+  },
+  "model": "main.level",
+  "pk": 6
+},
+
+
+{
+  "fields": {
+    "level": "Level-7"
+  },
+  "model": "main.level",
+  "pk": 7
+},
+
+
+{
+  "fields": {
+    "level": "Level-8"
+  },
+  "model": "main.level",
+  "pk": 8
+},
+
+
+{
+  "fields": {
+    "level": "Level-9"
+  },
+  "model": "main.level",
+  "pk": 9
+},
+
+
+{
+  "fields": {
+    "level": "Level-10"
+  },
+  "model": "main.level",
+  "pk": 10
+},
+
+
+{
+  "fields": {
+    "level": "Module-1"
+  },
+  "model": "main.level",
+  "pk": 11
+},
+{
+  "fields": {
+    "level": "Module-2"
+  },
+  "model": "main.level",
+  "pk": 12
+},
+{
+  "fields": {
+    "level": "Module-3"
+  },
+  "model": "main.level",
+  "pk": 13
+},
+{
+  "fields": {
+    "level": "Module-4"
+  },
+  "model": "main.level",
+  "pk": 14
+}]

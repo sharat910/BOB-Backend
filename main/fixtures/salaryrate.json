@@ -1,0 +1,10 @@
+[
+  {
+    "fields": {
+      "salary_rate": 125,
+      "date_added": "2018-07-08"
+    },
+    "model": "main.salaryrate",
+    "pk": 1
+  }
+]

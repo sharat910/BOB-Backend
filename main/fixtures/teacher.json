@@ -1,0 +1,13 @@
+[
+  {
+    "fields": {
+      "name": "M Renuka",
+      "phone": "9440751422",
+      "email": "bob.renuka@gmail.com",
+      "trained_max_level": 10,
+      "date_added": "2018-07-08"
+    },
+    "model": "main.teacher",
+    "pk": 1
+  }
+]

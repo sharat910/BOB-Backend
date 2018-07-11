@@ -1,0 +1,13 @@
+[
+  {
+    "fields": {
+      "month_royalty": 270,
+      "level_royalty": 810,
+      "exam_royalty": 200,
+      "registration_royalty":860,
+      "date_added": "2018-07-08"
+    },
+    "model": "main.royaltyrate",
+    "pk": 1
+  }
+]

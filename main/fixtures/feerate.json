@@ -1,0 +1,13 @@
+[
+  {
+    "fields": {
+      "month_fee": 900,
+      "level_fee": 2700,
+      "exam_fee": 200,
+      "registration_fee":950,
+      "date_added": "2018-07-08"
+    },
+    "model": "main.feerate",
+    "pk": 1
+  }
+]
