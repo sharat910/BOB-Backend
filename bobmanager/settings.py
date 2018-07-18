@@ -25,7 +25,7 @@ SECRET_KEY = '5a)xb^!kioh@jotic#hqa_d6d_ga7n-xlg01k1_d7kuwl!fet_'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -68,9 +68,10 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-CORS_ORIGIN_WHITELIST = (
-    'localhost:8080'
-)
+# CORS_ORIGIN_WHITELIST = (
+#     'localhost:8080'
+# )
+CORS_ORIGIN_ALLOW_ALL = True
 
 ROOT_URLCONF = 'bobmanager.urls'
 
