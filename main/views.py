@@ -34,16 +34,14 @@ class StudentEdit(APIView):
 
 # Create your views here.
 def index(request):
-    return HttpResponse("Hello, world. You're at the polls index.")
+    return HttpResponse("This is an API only server. Please visit /api/")
 
 #def dashboard(request):
 
 def add_new_student(request):
-    f = StudentForm()    
+    f = StudentForm()
     return render(request, 'student_form.html', {'form': f})
 
 def add_new_student_rest(request):
-    f = StudentForm()    
+    f = StudentForm()
     return render(request, 'student_form.html', {'form': f})
-
-
