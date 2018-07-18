@@ -150,24 +150,26 @@ class Student(models.Model):
     name = models.CharField(max_length=200)
     code = models.CharField(max_length=5)
     gender = models.CharField(max_length=6,choices=GENDER_CHOICES)
-    date_of_birth = models.DateField()
-    date_of_joining = models.DateField()
     batch = models.ForeignKey(Batch, models.SET_NULL, related_name='students',blank=True, null=True)
+
+    date_of_birth = models.DateField(null=True,blank=True)
+    date_of_joining = models.DateField(null=True,blank=True)
     # parents = models.ManyToManyField(Parent, related_name='students')
     #exam_results = models.ManyToManyField(ExamResult)
 
     #photo = models.ImageField(upload_to=get_image_path, blank=True, null=True)
 
     #Parent_details
-    father_name = models.CharField(max_length=200)
-    mother_name = models.CharField(max_length=200)
+    father_name = models.CharField(max_length=200,null=True,blank=True)
+    mother_name = models.CharField(max_length=200,null=True,blank=True)
 
     #Contact Details
     phone = models.CharField(max_length=13)
     alt_phone = models.CharField(max_length=13,null=True,blank=True)
     email = models.EmailField(null=True,blank=True)
 
-    performance_rating = models.CharField(max_length=6,choices=PERFORMANCE_CHOICES,default='Medium')
+    performance_rating = models.CharField(max_length=6, null=True,blank=True,
+                                choices=PERFORMANCE_CHOICES,default='Medium')
     dropped = models.BooleanField(default=False)
     date_dropped = models.DateField(blank=True,null=True)
     graduated = models.BooleanField(default=False)
