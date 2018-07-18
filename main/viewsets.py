@@ -18,6 +18,9 @@ class CentreViewSet(viewsets.ModelViewSet):
 class StudentViewSet(viewsets.ModelViewSet):
     queryset = Student.objects.all()
     serializer_class = StudentSerializer
+    filter_backends = (filters.OrderingFilter,)
+    ordering_fields = ('name', 'code', 'batch_details')
+    ordering = ('code',)
 
 class BatchViewSet(viewsets.ModelViewSet):
     queryset = Batch.objects.all()
@@ -120,4 +123,4 @@ class ExpenditureViewSet(viewsets.ModelViewSet):
     filter_backends = (filters.OrderingFilter,)
     ordering_fields = ('voucher_id', 'description', 'date','amount')
     ordering = ('-date',)
-    pagination_class = LargePagination
+    # pagination_class = LargePagination

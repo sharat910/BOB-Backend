@@ -164,7 +164,7 @@ class Student(models.Model):
     mother_name = models.CharField(max_length=200,null=True,blank=True)
 
     #Contact Details
-    phone = models.CharField(max_length=13)
+    phone = models.CharField(max_length=13,null=True,blank=True)
     alt_phone = models.CharField(max_length=13,null=True,blank=True)
     email = models.EmailField(null=True,blank=True)
 
