@@ -17,46 +17,46 @@
             "alt_phone": "9492101000",
             "batch": 2,
             "batch_details": "Sunday | 11AM-1PM | Level-1 | Brainobrain Suchitra",
-            "code": "S134",
+            "code": "S135",
             "date_dropped": null,
             "date_graduated": null,
-            "date_of_birth": "2008-05-13",
+            "date_of_birth": "2009-09-29",
             "date_of_joining": "2018-06-23",
             "dropped": false,
             "email": "swathikareddyguddam@gmail.com",
             "examresults": [],
-            "father_name": "G Rajendar Reddy",
+            "father_name": "Rajendar Reddy",
             "feerecords": [
                 {
                     "balance": 0,
                     "date_of_payment": "2018-06-17",
                     "due": 0,
                     "fee_amount": 2700,
-                    "fee_receipt_no": 6737,
+                    "fee_receipt_no": 6738,
                     "fee_type": "Level",
-                    "id": 11,
+                    "id": 13,
                     "level": 1,
                     "month_names": [
+                        "August",
                         "June",
-                        "July",
-                        "August"
+                        "July"
                     ],
                     "months": [
+                        8,
                         6,
-                        7,
-                        8
+                        7
                     ],
-                    "student": 2,
-                    "summary": "G Sitara Reddy | Level fee | Level-1"
+                    "student": 11,
+                    "summary": "G Shanti Tara Reddy | Level fee | Level-1"
                 },
                 {
                     "balance": 0,
                     "date_of_payment": "2018-06-17",
                     "due": 0,
                     "fee_amount": 200,
-                    "fee_receipt_no": 6737,
+                    "fee_receipt_no": 6738,
                     "fee_type": "Exam",
-                    "id": 12,
+                    "id": 14,
                     "level": 1,
                     "month_names": [
                         "August"
@@ -64,62 +64,62 @@
                     "months": [
                         8
                     ],
-                    "student": 2
+                    "student": 11
                 }
             ],
             "gender": "Female",
             "graduated": false,
-            "id": 2,
-            "mother_name": "G Satvika Reddy",
-            "name": "G Sitara Reddy",
+            "id": 11,
+            "mother_name": "Satvika Reddy",
+            "name": "G Shanti Tara Reddy",
             "performance_rating": "Medium",
             "phone": "9618121000",
-            "t_shirt_size": "XL"
+            "t_shirt_size": "L"
         },
         {
-            "alt_phone": "9849588807",
+            "alt_phone": "9959902266",
             "batch": 2,
             "batch_details": "Sunday | 11AM-1PM | Level-1 | Brainobrain Suchitra",
-            "code": "S125",
+            "code": "S136",
             "date_dropped": null,
             "date_graduated": null,
-            "date_of_birth": "2010-01-28",
+            "date_of_birth": "2010-11-25",
             "date_of_joining": "2018-06-17",
             "dropped": false,
-            "email": "murali_karella1980@yahoo.co.in",
+            "email": "harishdhatrik@gmail.com",
             "examresults": [],
-            "father_name": "K Murali Krishna",
+            "father_name": "Harish Dhatrik",
             "feerecords": [
                 {
                     "balance": 0,
                     "date_of_payment": "2018-06-17",
                     "due": 0,
                     "fee_amount": 2700,
-                    "fee_receipt_no": 6727,
+                    "fee_receipt_no": 6751,
                     "fee_type": "Level",
-                    "id": 5,
+                    "id": 15,
                     "level": 1,
                     "month_names": [
+                        "August",
                         "June",
-                        "July",
-                        "August"
+                        "July"
                     ],
                     "months": [
+                        8,
                         6,
-                        7,
-                        8
+                        7
                     ],
-                    "student": 3,
-                    "summary": "K S P Sai Jasmitha | Level fee | Level-1"
+                    "student": 10,
+                    "summary": "Sashiv Dhatrik | Level fee | Level-1"
                 },
                 {
                     "balance": 0,
                     "date_of_payment": "2018-06-17",
                     "due": 0,
                     "fee_amount": 200,
-                    "fee_receipt_no": 6727,
+                    "fee_receipt_no": 6751,
                     "fee_type": "Exam",
-                    "id": 6,
+                    "id": 16,
                     "level": 1,
                     "month_names": [
                         "August"
@@ -127,120 +127,165 @@
                     "months": [
                         8
                     ],
-                    "student": 3
+                    "student": 10
                 }
             ],
+            "gender": "Male",
+            "graduated": false,
+            "id": 10,
+            "mother_name": "Sowmya Dhatrik",
+            "name": "Sashiv Dhatrik",
+            "performance_rating": "Medium",
+            "phone": "7093535555",
+            "t_shirt_size": "L"
+        },
+        {
+            "alt_phone": "9246200582",
+            "batch": 2,
+            "batch_details": "Sunday | 11AM-1PM | Level-1 | Brainobrain Suchitra",
+            "code": "S124",
+            "date_dropped": null,
+            "date_graduated": null,
+            "date_of_birth": "2007-04-10",
+            "date_of_joining": "2018-06-17",
+            "dropped": false,
+            "email": "aghyd08@gmail.com",
+            "examresults": [],
+            "father_name": "Ankit Goyal",
+            "feerecords": [
+                {
+                    "balance": 0,
+                    "date_of_payment": "2018-06-17",
+                    "due": 0,
+                    "fee_amount": 2700,
+                    "fee_receipt_no": 6725,
+                    "fee_type": "Level",
+                    "id": 2,
+                    "level": 1,
+                    "month_names": [
+                        "August",
+                        "June",
+                        "July"
+                    ],
+                    "months": [
+                        8,
+                        6,
+                        7
+                    ],
+                    "student": 9,
+                    "summary": "Nityam Goyal | Level fee | Level-1"
+                },
+                {
+                    "balance": 0,
+                    "date_of_payment": "2018-06-17",
+                    "due": 0,
+                    "fee_amount": 200,
+                    "fee_receipt_no": 6725,
+                    "fee_type": "Exam",
+                    "id": 3,
+                    "level": 1,
+                    "month_names": [
+                        "August"
+                    ],
+                    "months": [
+                        8
+                    ],
+                    "student": 9
+                }
+            ],
+            "gender": "Male",
+            "graduated": false,
+            "id": 9,
+            "mother_name": "Reena Agarwal",
+            "name": "Nityam Goyal",
+            "performance_rating": "Medium",
+            "phone": "9951946000",
+            "t_shirt_size": "L"
+        },
+        {
+            "alt_phone": "9246200582",
+            "batch": 2,
+            "batch_details": "Sunday | 11AM-1PM | Level-1 | Brainobrain Suchitra",
+            "code": "S123",
+            "date_dropped": null,
+            "date_graduated": null,
+            "date_of_birth": "2011-04-21",
+            "date_of_joining": "2018-06-17",
+            "dropped": false,
+            "email": "aghyd08@gmail.com",
+            "examresults": [],
+            "father_name": "Ankit Goyal",
+            "feerecords": [
+                {
+                    "balance": 0,
+                    "date_of_payment": "2018-06-17",
+                    "due": 0,
+                    "fee_amount": 2700,
+                    "fee_receipt_no": 6724,
+                    "fee_type": "Level",
+                    "id": 1,
+                    "level": 1,
+                    "month_names": [
+                        "August",
+                        "June",
+                        "July"
+                    ],
+                    "months": [
+                        8,
+                        6,
+                        7
+                    ],
+                    "student": 8,
+                    "summary": "Nimish Goyal | Level fee | Level-1"
+                },
+                {
+                    "balance": 0,
+                    "date_of_payment": "2018-06-17",
+                    "due": 0,
+                    "fee_amount": 200,
+                    "fee_receipt_no": 6724,
+                    "fee_type": "Exam",
+                    "id": 4,
+                    "level": 1,
+                    "month_names": [
+                        "August"
+                    ],
+                    "months": [
+                        8
+                    ],
+                    "student": 8
+                }
+            ],
+            "gender": "Male",
+            "graduated": false,
+            "id": 8,
+            "mother_name": "Rina Agarwal",
+            "name": "Nimish Goyal",
+            "performance_rating": "Medium",
+            "phone": "9951946000",
+            "t_shirt_size": "L"
+        },
+        {
+            "alt_phone": "8308803345",
+            "batch": 2,
+            "batch_details": "Sunday | 11AM-1PM | Level-1 | Brainobrain Suchitra",
+            "code": "S138",
+            "date_dropped": null,
+            "date_graduated": null,
+            "date_of_birth": "2011-09-02",
+            "date_of_joining": "2018-06-17",
+            "dropped": false,
+            "email": "venky_somiselti@yahoo.com",
+            "examresults": [],
+            "father_name": "S V Rao",
+            "feerecords": [],
             "gender": "Female",
             "graduated": false,
-            "id": 3,
-            "mother_name": "K Sailaja",
-            "name": "K S P Sai Jasmitha",
+            "id": 7,
+            "mother_name": "S Bhagya Lakshmi",
+            "name": "Somiselti Roshani Sri",
             "performance_rating": "Medium",
-            "phone": "8187050428",
-            "t_shirt_size": "L"
-        },
-        {
-            "alt_phone": "9949094030",
-            "batch": 2,
-            "batch_details": "Sunday | 11AM-1PM | Level-1 | Brainobrain Suchitra",
-            "code": "S126",
-            "date_dropped": null,
-            "date_graduated": null,
-            "date_of_birth": "2009-04-23",
-            "date_of_joining": "2018-06-17",
-            "dropped": false,
-            "email": "orion.doors@gmail.com",
-            "examresults": [],
-            "father_name": "Shyam Kumar K V",
-            "feerecords": [
-                {
-                    "balance": 0,
-                    "date_of_payment": "2018-06-17",
-                    "due": 0,
-                    "fee_amount": 2700,
-                    "fee_receipt_no": 6728,
-                    "fee_type": "Level",
-                    "id": 7,
-                    "level": 1,
-                    "month_names": [
-                        "June",
-                        "July",
-                        "August"
-                    ],
-                    "months": [
-                        6,
-                        7,
-                        8
-                    ],
-                    "student": 4,
-                    "summary": "Shiddharth Nair | Level fee | Level-1"
-                },
-                {
-                    "balance": 0,
-                    "date_of_payment": "2018-06-17",
-                    "due": 0,
-                    "fee_amount": 200,
-                    "fee_receipt_no": 6728,
-                    "fee_type": "Exam",
-                    "id": 8,
-                    "level": 1,
-                    "month_names": [
-                        "August"
-                    ],
-                    "months": [
-                        8
-                    ],
-                    "student": 4
-                }
-            ],
-            "gender": "Male",
-            "graduated": false,
-            "id": 4,
-            "mother_name": "Raji Shyam",
-            "name": "Shiddharth Nair",
-            "performance_rating": "Medium",
-            "phone": "8008429829",
-            "t_shirt_size": "L"
-        },
-        {
-            "alt_phone": "7702301905",
-            "batch": 2,
-            "batch_details": "Sunday | 11AM-1PM | Level-1 | Brainobrain Suchitra",
-            "code": "S127",
-            "date_dropped": null,
-            "date_graduated": null,
-            "date_of_birth": "2007-07-06",
-            "date_of_joining": "2018-06-17",
-            "dropped": false,
-            "email": "dspsrinivas@rediffmail.com",
-            "examresults": [],
-            "father_name": "D Srinivas Jain",
-            "feerecords": [
-                {
-                    "balance": 0,
-                    "date_of_payment": "2018-06-17",
-                    "due": 0,
-                    "fee_amount": 900,
-                    "fee_receipt_no": 6730,
-                    "fee_type": "Month",
-                    "id": 9,
-                    "level": 1,
-                    "month_names": [
-                        "June"
-                    ],
-                    "months": [
-                        6
-                    ],
-                    "student": 5
-                }
-            ],
-            "gender": "Male",
-            "graduated": false,
-            "id": 5,
-            "mother_name": "D Swapna",
-            "name": "D Dipesh Jain",
-            "performance_rating": "Medium",
-            "phone": "9908388672",
+            "phone": "9764222354",
             "t_shirt_size": "L"
         },
         {
@@ -285,261 +330,216 @@
             "t_shirt_size": "L"
         },
         {
-            "alt_phone": "8308803345",
+            "alt_phone": "7702301905",
             "batch": 2,
             "batch_details": "Sunday | 11AM-1PM | Level-1 | Brainobrain Suchitra",
-            "code": "S138",
-            "date_dropped": "2018-06-30",
+            "code": "S127",
+            "date_dropped": null,
             "date_graduated": null,
-            "date_of_birth": "2011-09-02",
+            "date_of_birth": "2007-07-06",
             "date_of_joining": "2018-06-17",
-            "dropped": true,
-            "email": "venky_somiselti@yahoo.com",
+            "dropped": false,
+            "email": "dspsrinivas@rediffmail.com",
             "examresults": [],
-            "father_name": "S V Rao",
-            "feerecords": [],
+            "father_name": "D Srinivas Jain",
+            "feerecords": [
+                {
+                    "balance": 0,
+                    "date_of_payment": "2018-06-17",
+                    "due": 0,
+                    "fee_amount": 900,
+                    "fee_receipt_no": 6730,
+                    "fee_type": "Month",
+                    "id": 9,
+                    "level": 1,
+                    "month_names": [
+                        "June"
+                    ],
+                    "months": [
+                        6
+                    ],
+                    "student": 5
+                }
+            ],
+            "gender": "Male",
+            "graduated": false,
+            "id": 5,
+            "mother_name": "D Swapna",
+            "name": "D Dipesh Jain",
+            "performance_rating": "Medium",
+            "phone": "9908388672",
+            "t_shirt_size": "L"
+        },
+        {
+            "alt_phone": "9949094030",
+            "batch": 2,
+            "batch_details": "Sunday | 11AM-1PM | Level-1 | Brainobrain Suchitra",
+            "code": "S126",
+            "date_dropped": null,
+            "date_graduated": null,
+            "date_of_birth": "2009-04-23",
+            "date_of_joining": "2018-06-17",
+            "dropped": false,
+            "email": "orion.doors@gmail.com",
+            "examresults": [],
+            "father_name": "Shyam Kumar K V",
+            "feerecords": [
+                {
+                    "balance": 0,
+                    "date_of_payment": "2018-06-17",
+                    "due": 0,
+                    "fee_amount": 2700,
+                    "fee_receipt_no": 6728,
+                    "fee_type": "Level",
+                    "id": 7,
+                    "level": 1,
+                    "month_names": [
+                        "August",
+                        "June",
+                        "July"
+                    ],
+                    "months": [
+                        8,
+                        6,
+                        7
+                    ],
+                    "student": 4,
+                    "summary": "Shiddharth Nair | Level fee | Level-1"
+                },
+                {
+                    "balance": 0,
+                    "date_of_payment": "2018-06-17",
+                    "due": 0,
+                    "fee_amount": 200,
+                    "fee_receipt_no": 6728,
+                    "fee_type": "Exam",
+                    "id": 8,
+                    "level": 1,
+                    "month_names": [
+                        "August"
+                    ],
+                    "months": [
+                        8
+                    ],
+                    "student": 4
+                }
+            ],
+            "gender": "Male",
+            "graduated": false,
+            "id": 4,
+            "mother_name": "Raji Shyam",
+            "name": "Shiddharth Nair",
+            "performance_rating": "Medium",
+            "phone": "8008429829",
+            "t_shirt_size": "L"
+        },
+        {
+            "alt_phone": "9849588807",
+            "batch": 2,
+            "batch_details": "Sunday | 11AM-1PM | Level-1 | Brainobrain Suchitra",
+            "code": "S125",
+            "date_dropped": null,
+            "date_graduated": null,
+            "date_of_birth": "2010-01-28",
+            "date_of_joining": "2018-06-17",
+            "dropped": false,
+            "email": "murali_karella1980@yahoo.co.in",
+            "examresults": [],
+            "father_name": "K Murali Krishna",
+            "feerecords": [
+                {
+                    "balance": 0,
+                    "date_of_payment": "2018-06-17",
+                    "due": 0,
+                    "fee_amount": 2700,
+                    "fee_receipt_no": 6727,
+                    "fee_type": "Level",
+                    "id": 5,
+                    "level": 1,
+                    "month_names": [
+                        "August",
+                        "June",
+                        "July"
+                    ],
+                    "months": [
+                        8,
+                        6,
+                        7
+                    ],
+                    "student": 3,
+                    "summary": "K S P Sai Jasmitha | Level fee | Level-1"
+                },
+                {
+                    "balance": 0,
+                    "date_of_payment": "2018-06-17",
+                    "due": 0,
+                    "fee_amount": 200,
+                    "fee_receipt_no": 6727,
+                    "fee_type": "Exam",
+                    "id": 6,
+                    "level": 1,
+                    "month_names": [
+                        "August"
+                    ],
+                    "months": [
+                        8
+                    ],
+                    "student": 3
+                }
+            ],
             "gender": "Female",
             "graduated": false,
-            "id": 7,
-            "mother_name": "S Bhagya Lakshmi",
-            "name": "Somiselti Roshani Sri",
+            "id": 3,
+            "mother_name": "K Sailaja",
+            "name": "K S P Sai Jasmitha",
             "performance_rating": "Medium",
-            "phone": "9764222354",
-            "t_shirt_size": "L"
-        },
-        {
-            "alt_phone": "9246200582",
-            "batch": 2,
-            "batch_details": "Sunday | 11AM-1PM | Level-1 | Brainobrain Suchitra",
-            "code": "S123",
-            "date_dropped": null,
-            "date_graduated": null,
-            "date_of_birth": "2011-04-21",
-            "date_of_joining": "2018-06-17",
-            "dropped": false,
-            "email": "aghyd08@gmail.com",
-            "examresults": [],
-            "father_name": "Ankit Goyal",
-            "feerecords": [
-                {
-                    "balance": 0,
-                    "date_of_payment": "2018-06-17",
-                    "due": 0,
-                    "fee_amount": 2700,
-                    "fee_receipt_no": 6724,
-                    "fee_type": "Level",
-                    "id": 1,
-                    "level": 1,
-                    "month_names": [
-                        "June",
-                        "July",
-                        "August"
-                    ],
-                    "months": [
-                        6,
-                        7,
-                        8
-                    ],
-                    "student": 8,
-                    "summary": "Nimish Goyal | Level fee | Level-1"
-                },
-                {
-                    "balance": 0,
-                    "date_of_payment": "2018-06-17",
-                    "due": 0,
-                    "fee_amount": 200,
-                    "fee_receipt_no": 6724,
-                    "fee_type": "Exam",
-                    "id": 4,
-                    "level": 1,
-                    "month_names": [
-                        "August"
-                    ],
-                    "months": [
-                        8
-                    ],
-                    "student": 8
-                }
-            ],
-            "gender": "Male",
-            "graduated": false,
-            "id": 8,
-            "mother_name": "Rina Agarwal",
-            "name": "Nimish Goyal",
-            "performance_rating": "Medium",
-            "phone": "9951946000",
-            "t_shirt_size": "L"
-        },
-        {
-            "alt_phone": "9246200582",
-            "batch": 2,
-            "batch_details": "Sunday | 11AM-1PM | Level-1 | Brainobrain Suchitra",
-            "code": "S124",
-            "date_dropped": null,
-            "date_graduated": null,
-            "date_of_birth": "2007-04-10",
-            "date_of_joining": "2018-06-17",
-            "dropped": false,
-            "email": "aghyd08@gmail.com",
-            "examresults": [],
-            "father_name": "Ankit Goyal",
-            "feerecords": [
-                {
-                    "balance": 0,
-                    "date_of_payment": "2018-06-17",
-                    "due": 0,
-                    "fee_amount": 2700,
-                    "fee_receipt_no": 6725,
-                    "fee_type": "Level",
-                    "id": 2,
-                    "level": 1,
-                    "month_names": [
-                        "June",
-                        "July",
-                        "August"
-                    ],
-                    "months": [
-                        6,
-                        7,
-                        8
-                    ],
-                    "student": 9,
-                    "summary": "Nityam Goyal | Level fee | Level-1"
-                },
-                {
-                    "balance": 0,
-                    "date_of_payment": "2018-06-17",
-                    "due": 0,
-                    "fee_amount": 200,
-                    "fee_receipt_no": 6725,
-                    "fee_type": "Exam",
-                    "id": 3,
-                    "level": 1,
-                    "month_names": [
-                        "August"
-                    ],
-                    "months": [
-                        8
-                    ],
-                    "student": 9
-                }
-            ],
-            "gender": "Male",
-            "graduated": false,
-            "id": 9,
-            "mother_name": "Reena Agarwal",
-            "name": "Nityam Goyal",
-            "performance_rating": "Medium",
-            "phone": "9951946000",
-            "t_shirt_size": "L"
-        },
-        {
-            "alt_phone": "9959902266",
-            "batch": 2,
-            "batch_details": "Sunday | 11AM-1PM | Level-1 | Brainobrain Suchitra",
-            "code": "S136",
-            "date_dropped": null,
-            "date_graduated": null,
-            "date_of_birth": "2010-11-25",
-            "date_of_joining": "2018-06-17",
-            "dropped": false,
-            "email": "harishdhatrik@gmail.com",
-            "examresults": [],
-            "father_name": "Harish Dhatrik",
-            "feerecords": [
-                {
-                    "balance": 0,
-                    "date_of_payment": "2018-06-17",
-                    "due": 0,
-                    "fee_amount": 2700,
-                    "fee_receipt_no": 6751,
-                    "fee_type": "Level",
-                    "id": 15,
-                    "level": 1,
-                    "month_names": [
-                        "June",
-                        "July",
-                        "August"
-                    ],
-                    "months": [
-                        6,
-                        7,
-                        8
-                    ],
-                    "student": 10,
-                    "summary": "Sashiv Dhatrik | Level fee | Level-1"
-                },
-                {
-                    "balance": 0,
-                    "date_of_payment": "2018-06-17",
-                    "due": 0,
-                    "fee_amount": 200,
-                    "fee_receipt_no": 6751,
-                    "fee_type": "Exam",
-                    "id": 16,
-                    "level": 1,
-                    "month_names": [
-                        "August"
-                    ],
-                    "months": [
-                        8
-                    ],
-                    "student": 10
-                }
-            ],
-            "gender": "Male",
-            "graduated": false,
-            "id": 10,
-            "mother_name": "Sowmya Dhatrik",
-            "name": "Sashiv Dhatrik",
-            "performance_rating": "Medium",
-            "phone": "7093535555",
+            "phone": "8187050428",
             "t_shirt_size": "L"
         },
         {
             "alt_phone": "9492101000",
             "batch": 2,
             "batch_details": "Sunday | 11AM-1PM | Level-1 | Brainobrain Suchitra",
-            "code": "S135",
+            "code": "S134",
             "date_dropped": null,
             "date_graduated": null,
-            "date_of_birth": "2009-09-29",
+            "date_of_birth": "2008-05-13",
             "date_of_joining": "2018-06-23",
             "dropped": false,
             "email": "swathikareddyguddam@gmail.com",
             "examresults": [],
-            "father_name": "Rajendar Reddy",
+            "father_name": "G Rajendar Reddy",
             "feerecords": [
                 {
                     "balance": 0,
                     "date_of_payment": "2018-06-17",
                     "due": 0,
                     "fee_amount": 2700,
-                    "fee_receipt_no": 6738,
+                    "fee_receipt_no": 6737,
                     "fee_type": "Level",
-                    "id": 13,
+                    "id": 11,
                     "level": 1,
                     "month_names": [
+                        "August",
                         "June",
-                        "July",
-                        "August"
+                        "July"
                     ],
                     "months": [
+                        8,
                         6,
-                        7,
-                        8
+                        7
                     ],
-                    "student": 11,
-                    "summary": "G Shanti Tara Reddy | Level fee | Level-1"
+                    "student": 2,
+                    "summary": "G Sitara Reddy | Level fee | Level-1"
                 },
                 {
                     "balance": 0,
                     "date_of_payment": "2018-06-17",
                     "due": 0,
                     "fee_amount": 200,
-                    "fee_receipt_no": 6738,
+                    "fee_receipt_no": 6737,
                     "fee_type": "Exam",
-                    "id": 14,
+                    "id": 12,
                     "level": 1,
                     "month_names": [
                         "August"
@@ -547,17 +547,17 @@
                     "months": [
                         8
                     ],
-                    "student": 11
+                    "student": 2
                 }
             ],
             "gender": "Female",
             "graduated": false,
-            "id": 11,
-            "mother_name": "Satvika Reddy",
-            "name": "G Shanti Tara Reddy",
+            "id": 2,
+            "mother_name": "G Satvika Reddy",
+            "name": "G Sitara Reddy",
             "performance_rating": "Medium",
             "phone": "9618121000",
-            "t_shirt_size": "L"
+            "t_shirt_size": "XL"
         }
     ],
     "summary": "Sunday | 11AM-1PM | Level-1 | Brainobrain Suchitra",

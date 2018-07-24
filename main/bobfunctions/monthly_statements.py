@@ -1,14 +1,16 @@
 from openpyxl import load_workbook
+from django.conf import settings
 from pprint import pprint
 from datetime import date,datetime
 import requests
 import json
 import xlrd
 import calendar
-from fix_borders import patch_worksheet
+from .fix_borders import patch_worksheet
+import os
 
-
-TEMPLATE_ROOT = 'form_templates'
+FILE_DIR = os.path.dirname(os.path.abspath(__file__))
+TEMPLATE_ROOT = FILE_DIR + '/form_templates'
 TEMPLATE_DIR = 'Monthly'
 
 def fetch_batch():
@@ -33,20 +35,25 @@ class MonthlyStatement(object):
         self.month = month
         self.wb = None
         self.ws = None
-        self.generate_monthly_statement()
 
     def generate_monthly_statement(self):
         self.set_wb_ws()
         self.fill_top()
         self.fill_students()
-        self.wb.save(self.get_final_file_path())
+        file_path = self.get_final_file_path()
+        self.wb.save(file_path)
+        return self.generate_url(file_path)
+
+    def generate_url(self,file_path):
+        url = "/".join(file_path.split("/")[3:])
+        return url
 
     def get_template_file_path(self,type,file_type='xlsx'):
         return "%s/%s/FormB_%s.%s" % (TEMPLATE_ROOT,TEMPLATE_DIR,type,file_type)
 
     def get_final_file_path(self,file_type='xlsx'):
-        return '../../media/monthly_statements/%s_%s_%s.%s' \
-        % (self.batch['teacher_name'],self.batch['level_detail'],\
+        return settings.MEDIA_ROOT + 'monthly_statements/%s_%s_%s.%s' \
+        % (self.batch['teacher_name'].replace(" ","_"),self.batch['level_detail'],\
         calendar.month_abbr[self.month],file_type)
 
     def bob_or_little_bob(self,level):
@@ -169,3 +176,4 @@ class MonthlyStatement(object):
 if __name__ == '__main__':
     batch = fetch_batch()
     m = MonthlyStatement(batch,7)
+    print(m.generate_monthly_statement())
