@@ -1,5 +1,6 @@
 from rest_framework import serializers
 from .models import *
+from .bobfunctions.student_due import get_student_dues
 
 class CustomSerializer(serializers.ModelSerializer):
 
@@ -51,7 +52,8 @@ class FeeRecordSerializer(CustomSerializer):
 
 class StudentSerializer(CustomSerializer):
     batch_details = serializers.StringRelatedField(source='batch',read_only=True)
-    # parent_details = ParentSerializer(source='parents',read_only=True,many=True)
+    # current_level = serializers.SlugRelatedField(source='batch', read_only=True, slug_field='level_detail')
+    # level_start_date = serializers.SlugRelatedField(source='batch', read_only=True, slug_field='level_start_date')
     feerecords = FeeRecordSerializer(read_only=True,many=True)
     examresults = ExamResultSerializer(read_only=True,many=True)
 
@@ -59,6 +61,12 @@ class StudentSerializer(CustomSerializer):
         model = Student
         fields = '__all__'
         extra_fields = ['feerecords','batch_details','examresults']#,'parent_details']
+
+    def to_representation(self, instance):
+        data = super().to_representation(instance)
+        due_dict = get_student_dues(data['id'])
+        data['dues'] = due_dict
+        return data
 
 class BatchSerializer(CustomSerializer):
     #students = serializers.StringRelatedField(many=True)
