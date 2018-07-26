@@ -1,6 +1,7 @@
 from rest_framework import serializers
 from .models import *
 from .bobfunctions.student_due import get_student_dues
+from .bobfunctions.batch import exam_this_month
 
 class CustomSerializer(serializers.ModelSerializer):
 
@@ -85,6 +86,7 @@ class BatchSerializer(CustomSerializer):
         data = super().to_representation(instance)
         data['centre_exp'] = CentreSerializer(
             Centre.objects.get(pk=data['centre'])).data
+        data['exam_this_month'] = exam_this_month(data['running_months'])
         return data
 
 class TeacherSerializer(CustomSerializer):
