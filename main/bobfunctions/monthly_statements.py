@@ -144,13 +144,8 @@ class MonthlyStatement(object):
         data['payment'] = payment_row
         return data
 
-    def get_running_months(self,batch_start_date):
-        batch_start_month = self.get_month(batch_start_date)
-        batch_running_months = range(batch_start_month,batch_start_month+3)
-        return batch_running_months
-
     def fill_students(self):
-        batch_running_months = self.get_running_months(self.batch['level_start_date'])
+        batch_running_months = self.batch['running_months']
         students = sorted(self.batch['students'],key= lambda x: x['code'])
         row_num = 13
         total_data = []

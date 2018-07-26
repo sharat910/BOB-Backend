@@ -119,7 +119,7 @@ class Batch(models.Model):
     centre = models.ForeignKey(
         Centre, models.SET_NULL,related_name='batches', blank=True, null=True)
     level_start_date = models.DateField()
-    #running_months = models.ManyToManyField(Month, blank=True, related_name='batches')
+    running_months = models.ManyToManyField(Month, blank=True, related_name='batches')
 
     def __str__(self):
         return "%s | %s | %s | %s" % (self.day, self.timing, self.level.level, self.centre.name)

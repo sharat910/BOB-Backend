@@ -5,9 +5,8 @@ from main.models import Student
 def fetch_current_level_feerecords(student):
     return filter(lambda feerecord: feerecord.level == student.batch.level, student.feerecords.all())
 
-def get_running_months(batch_start_date):
-    batch_start_month = batch_start_date.month
-    batch_running_months = range(batch_start_month,batch_start_month+3)
+def get_running_months(batch):
+    batch_running_months = [month.id for month in batch.running_months.all()]
     return batch_running_months
 
 def get_student_dues(student_id):
@@ -23,7 +22,7 @@ def get_student_dues(student_id):
         return due_dict
 
 
-    running_months = get_running_months(student.batch.level_start_date)
+    running_months = get_running_months(student.batch)
     current_month = datetime.today().month
     feerecords = fetch_current_level_feerecords(student)
 
