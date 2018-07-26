@@ -87,6 +87,7 @@ class BatchSerializer(CustomSerializer):
         data['centre_exp'] = CentreSerializer(
             Centre.objects.get(pk=data['centre'])).data
         data['exam_this_month'] = exam_this_month(data['running_months'])
+        data['num_of_students'] = len(data['students'])
         return data
 
 class TeacherSerializer(CustomSerializer):
