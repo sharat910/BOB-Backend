@@ -74,11 +74,12 @@ class BatchSerializer(CustomSerializer):
     teacher_name = serializers.SlugRelatedField(source='teacher', read_only=True, slug_field='name')
     # centre_name = serializers.SlugRelatedField(source='centre', read_only=True, slug_field='name')
     # centre_area = serializers.SlugRelatedField(source='centre', read_only=True, slug_field='area')
+    running_months_names = serializers.StringRelatedField(source='running_months',many=True,read_only=True)
 
     class Meta:
         model = Batch
         fields = '__all__'
-        extra_fields= ['students','teacher_name','level_detail','summary']
+        extra_fields= ['students','teacher_name','level_detail','running_months_names','summary']
 
     def to_representation(self, instance):
         data = super().to_representation(instance)
