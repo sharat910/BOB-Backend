@@ -38,6 +38,9 @@ def get_student_dues(student_id):
             month_paid_for = feerecord.months.all()[0].id
             if month_paid_for not in running_months:
                 print( "Error")
+                print(student)
+                print(student.id)
+                continue
             idx = running_months.index(month_paid_for)
             if idx == 0:
                 due_dict['first_month'] = 'P'
@@ -46,23 +49,39 @@ def get_student_dues(student_id):
             elif idx == 2:
                 due_dict['third_month'] = 'P'
 
-    curr_idx = running_months.index(current_month)
-    if curr_idx == 0:
-        if due_dict['first_month'] == 'P':
+    try:
+        if current_month > max(running_months):
+            if due_dict['first_month'] == 'P' and due_dict['second_month'] == 'P'\
+            and due_dict['third_month'] == 'P' and due_dict['exam'] == 'P':
+                due_dict['due'] = False
+            else:
+                due_dict['due'] = True
+
+        elif current_month < min(running_months):
             due_dict['due'] = False
         else:
-            due_dict['due'] = True
-    elif curr_idx == 1:
-        if due_dict['first_month'] == 'P' and due_dict['second_month'] == 'P':
-            due_dict['due'] = False
-        else:
-            due_dict['due'] = True
-    elif curr_idx == 2:
-        if due_dict['first_month'] == 'P' and due_dict['second_month'] == 'P'\
-        and due_dict['third_month'] == 'P' and due_dict['exam'] == 'P':
-            due_dict['due'] = False
-        else:
-            due_dict['due'] = True
+            curr_idx = running_months.index(current_month)
+            if curr_idx == 0:
+                if due_dict['first_month'] == 'P':
+                    due_dict['due'] = False
+                else:
+                    due_dict['due'] = True
+            elif curr_idx == 1:
+                if due_dict['first_month'] == 'P' and due_dict['second_month'] == 'P':
+                    due_dict['due'] = False
+                else:
+                    due_dict['due'] = True
+            elif curr_idx == 2:
+                if due_dict['first_month'] == 'P' and due_dict['second_month'] == 'P'\
+                and due_dict['third_month'] == 'P' and due_dict['exam'] == 'P':
+                    due_dict['due'] = False
+                else:
+                    due_dict['due'] = True
+    except Exception as e:
+        print(e)
+        print(current_month)
+        print(running_months)
+        print(student)
 
     return due_dict
 
