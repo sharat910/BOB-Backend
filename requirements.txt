@@ -21,7 +21,7 @@ oauthlib==2.1.0
 parso==0.2.1
 Pillow==5.1.0
 pluggy==0.6.0
-psycopg2
+psycopg2-binary
 pybeep==0.0.4
 pycodestyle==2.4.0
 pydocstyle==2.1.1
